@@ -1,0 +1,1 @@
+SPANISH_PRONOUNS = ['yo', 'tú', 'él', 'nosotros', 'vosotros', 'ellos']

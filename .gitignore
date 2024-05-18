@@ -1,2 +1,5 @@
 venv/
 *egg-info/
+*.db
+*.sqlite3
+test*

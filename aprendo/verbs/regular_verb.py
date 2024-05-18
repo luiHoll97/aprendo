@@ -23,3 +23,6 @@ class RegularVerb(Verb):
         
     def remove_stem(self):
         return self.word[:-2]
+    
+    def get_ending(self):
+        return self.word[-2:]

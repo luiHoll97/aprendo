@@ -1,14 +1,17 @@
 from .verb import Verb
-from .er_regular_verb import ERRegularVerb
-from .ir_regular_verb import IRRegularVerb
-from .ar_regular_verb import ARRegularVerb
+
 
 class RegularVerb(Verb):
     def __init__(self, word, translation):
         super().__init__(word, translation)
+        self.base = self.remove_stem()
 
     @classmethod
-    def factory(word, translation):
+    def factory(cls, word, translation):
+        from .er_regular_verb import ERRegularVerb
+        from .ir_regular_verb import IRRegularVerb
+        from .ar_regular_verb import ARRegularVerb
+
         if word.endswith('ar'):
             return ARRegularVerb(word, translation)
         elif word.endswith('er'):
@@ -17,3 +20,6 @@ class RegularVerb(Verb):
             return IRRegularVerb(word, translation)
         else:
             return None
+        
+    def remove_stem(self):
+        return self.word[:-2]

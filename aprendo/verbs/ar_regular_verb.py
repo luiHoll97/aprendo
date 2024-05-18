@@ -7,16 +7,22 @@ class ARRegularVerb(RegularVerb):
 
     def get_conjugation(self, pronoun):
         if pronoun == 'yo':
-            return self.word + 'o'
+            return self.base + 'o'
         elif pronoun == 'tu':
-            return self.word + 'as'
+            return self.base + 'as'
         elif pronoun == 'el':
-            return self.word + 'a'
+            return self.base + 'a'
         elif pronoun == 'nosotros':
-            return self.word + 'amos'
+            return self.base + 'amos'
         elif pronoun == 'vosotros':
-            return self.word + 'ais'
+            return self.base + 'ais'
         elif pronoun == 'ellos':
-            return self.word + 'an'
+            return self.base + 'an'
         else:
             return 'Unknown pronoun'
+        
+    def get_translation(self):
+        return self.translation
+    
+    def get_example(self):
+        pass

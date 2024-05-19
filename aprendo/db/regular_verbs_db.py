@@ -6,14 +6,12 @@ class VerbsDB(BaseDB):
     def __init__(self):
         """Initialize the VerbsDB class with a predefined database file and data."""
         super().__init__("regular_verbs.db")
-        print('init called - verbs db')
         self.initialize_database()
         
 
     def initialize_database(self):
         """Initialize the database with predefined tables if it doesn't exist."""
         if not os.path.exists(self.db_file):
-            print('initialize database called')
             self.create_connection()
             self.create_predefined_table()
             self.close_connection()

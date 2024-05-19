@@ -26,3 +26,8 @@ class RegularVerb(Verb):
     
     def get_ending(self):
         return self.word[-2:]
+    
+    def db_factory(db_row):
+        word = db_row[1]
+        translation = db_row[2]
+        return RegularVerb.factory(word, translation)

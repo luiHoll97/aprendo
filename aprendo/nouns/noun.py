@@ -8,6 +8,11 @@ class Noun(Word):
     def __repr__(self):
         return f"{self.word} - {self.translation}"
     
+    def db_factory(db_row):
+        word = db_row[1]
+        translation = db_row[2]
+        return Noun(word, translation)
+    
     def get_word(self):
         return self.word
     

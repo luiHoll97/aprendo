@@ -14,5 +14,5 @@ setup(
     author_email='tech.luiholl@gmail.com',
     url='https://github.com/luiHoll97/aprendo',
     packages=find_packages(),
-    install_requires=[],
+    install_requires=['questionary'],
 )

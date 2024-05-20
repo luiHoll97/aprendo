@@ -12,7 +12,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/luiHoll97/aprendo)](https://github.com/luiHoll97/aprendo/issues)
 [![GitHub forks](https://img.shields.io/github/forks/luiHoll97/aprendo)](https://github.com/luiHoll97/aprendo/network/members)
 [![GitHub contributors](https://img.shields.io/github/contributors/luiHoll97/aprendo)](https://github.com/luiHoll97/aprendo/graphs/contributors)
-[![PyPI version](https://badge.fury.io/py/aprendo.svg)](https://badge.fury.io/py/aprendo)
+[![PyPI Version](https://img.shields.io/pypi/v/aprendo.svg?color=darkgreen)](https://pypi.org/project/aprendo/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/Documentation-Wiki-brightgreen)](https://github.com/luiHoll97/aprendo/wiki)
 
